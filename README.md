@@ -2,7 +2,7 @@ Control Flow
 
 We will work on refresher programs using Control Flow basics including....
 
-If, Elid, Else Statements
+If, Elif, Else Statements
 For loops
 While loops
 
