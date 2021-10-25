@@ -17,6 +17,17 @@ print("\nWelcome to Cash-R-Us", first_name, last_name + ", we will now set up a 
 
 # Set up a pin for the users to have a secure account
 pin = input("Please chose a 4-digit personal security code: ")
+
 print("\nThank you", first_name + ", we see you set your pin to", pin)
 
 print("\nWould you like to make a transaction through our Automated Teller Machine")
+atm = input("Yes or No: ").lower()
+
+if atm == "yes":
+    print("\n**********************************************************\n")
+
+
+
+
+else:
+    print("Have a wonderful day", first_name, last_name, ", please come back and visit soon.")
