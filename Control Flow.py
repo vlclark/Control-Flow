@@ -13,18 +13,32 @@ print("Welcome to Cash-R-Us Bank\nLet's take a moment to set up your account.\n"
 first_name = input("What is your first name: ")
 last_name = input("What is your last name: ")
 
-print("\nWelcome to Cash-R-Us", first_name, last_name + ", we will now set up a security pin on your account.\n")
+print("\nWelcome to Cash-R-Us", first_name, last_name + ", we will now set up a security PIN on your account.\n")
 
 # Set up a pin for the users to have a secure account
 pin = input("Please chose a 4-digit personal security code: ")
 
-print("\nThank you", first_name + ", we see you set your pin to", pin)
+print("\nThank you", first_name + ", we see you set your PIN to", pin)
 
 print("\nWould you like to make a transaction through our Automated Teller Machine")
 atm = input("Yes or No: ").lower()
 
 if atm == "yes":
     print("\n**********************************************************\n")
+
+    # This part of the program will be asking users to complete a transaction through the ATM
+    print("Please insert your ATM card\n")
+    print("Welcome to Cash-R-Us ATM", first_name,last_name, "\n")
+    userPIN = input("What is your four digit PIN: ")
+
+    if userPIN == pin:
+        balance = 674
+        print("\nYour Balance: $" + str(balance))
+
+
+
+    else:
+        print("\nSorry",first_name,last_name, "your PIN doesn't match our records")
 
 
 
