@@ -40,7 +40,13 @@ if atm == "yes":
         if typeOfTransaction == "w":
             wAmount = int(input("\nEnter amount you would like to withdrawal: "))
             balance = balance - wAmount
-            print("Your updated balance is: $" + str(balance))
+
+            if balance < 0:
+                print("Sorry, you cannot withdrawal more than you have deposited.")
+
+            elif balance > 0:
+                    print("Your updated balance is: $" + str(balance))
+
 
         elif typeOfTransaction == "d":
             dAmount = int(input("\nEnter amount you would like to deposit: "))
@@ -49,6 +55,7 @@ if atm == "yes":
 
         else:
             print("Your balance is: $" + str(balance))
+
 
     else:
         print("\nSorry",first_name,last_name, "your PIN doesn't match our records")
