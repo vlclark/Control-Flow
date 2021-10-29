@@ -23,6 +23,7 @@ if pin == secondPin:
 
 else:
     print("Your PIN does not match.")
+    exit()
 
 
 
