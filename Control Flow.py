@@ -18,13 +18,13 @@ print("\nWelcome to Cash-R-Us", first_name, last_name + ", we will now set up a 
 # Set up a pin for the users to have a secure account
 pin = input("Please chose a 4-digit personal security code: ")
 secondPin = input("Please confirm your pin: ")
+
 if pin == secondPin:
-    print("\nThank you", first_name + ", we see you set your PIN to", pin)
+    print("\nThank you", first_name, last_name, ", we see you set your PIN to", pin)
 
 else:
-    print("Your PIN does not match.")
+    print("\nYour PIN does not match.")
     exit()
-
 
 
 print("\nWould you like to make a transaction through our Automated Teller Machine")
